@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Allow specific origin(s)
+app.use(cors({
+  origin: 'https://merncodesample-frontend.vercel.app/'
+}));
+
 // Simple endpoint to handle form submission
 app.post('/api/submit', (req, res) => {
     const { name, email, message, queryType, companyName, companyContact, companyLocation } = req.body;
