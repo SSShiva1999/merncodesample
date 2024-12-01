@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Allow specific origin(s)
 app.use(cors({
-  origin: 'https://merncodesample-frontend.vercel.app/'
+  origin: 'https://merncodesample-frontend.vercel.app'
 }));
 
 // Simple endpoint to handle form submission
