@@ -10,8 +10,13 @@ app.use(bodyParser.json());
 
 // Allow specific origin(s)
 app.use(cors({
-  origin: 'https://merncodesample-frontend.vercel.app'
+  origin: '"*"',
+  credentials: true
 }));
+
+
+
+// "*", "https://talku-talku-v3.vercel.app", "https://talku-talku-v3-server-5wgbjqivt-vinyl-davyl.vercel.app", "https://talku-talku-v3-server.vercel.app"
 
 // Simple endpoint to handle form submission
 app.post('/api/submit', (req, res) => {
