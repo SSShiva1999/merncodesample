@@ -20,7 +20,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const response = await axios.post('http://localhost:5001/api/submit', {
+        const response = await axios.post('https://merncodesample-server.vercel.app/api/submit',  {
             name: formData.name,
             email: formData.email,
             message: formData.message,

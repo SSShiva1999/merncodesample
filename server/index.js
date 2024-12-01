@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Allow specific origin(s)
 app.use(cors({
-  origin: '"*"',
+  origin: ["*", "https://merncodesample-frontend.vercel.app", "https://merncodesample-server.vercel.app", "https://merncodesample-server-hb3bzv57k-ssshiva1999s-projects.vercel.app" ],
   credentials: true
 }));
 
